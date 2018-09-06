@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>CALCULADORA</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="calculadoraCSS.css" />
+        <script type="text/javascript" src="calculadoraJS.js"></script>
+    </head>
+    <body>
+        <div class="calculadora" align="center">
+            <form name="calculadora" id="calculadora" method="POST" action="servletCalculadora">
+                <p align="center" class="titulo">CALCULADORA</p>
+                <p>
+                    <input type="number" name="numUno" value="0" placeholder="No. 1" id="num"/>
+                    <input type="number" name="numDos" value="0" placeholder="No. 2" id="num"/>
+                </p>
+                <!--<p id="texto">RESULTADO</p>
+                <p>
+                    <input type="button" value="+"/>
+                    <input type="button" value="-"/>
+                    <input type="button" value="*"/>
+                </p>
+                <p>
+                    <input type="button" value="/" />
+                    <input type="button" value="√"/>
+                    <input type="button" value="sen"/>
+                </p>
+                <p>
+                    <input type="button" value="tan" />
+                    <input type="button" value="ln" />
+                    <input type="button" value="log10"/>
+                </p>-->
+                
+                <select name="operacion" class="select">
+                    <option value="" class="opcion">OPERACION</option>
+                    <option value="+" class="opcion">+</option>
+                    <option value="-" class="opcion">-</option>
+                    <option value="*" class="opcion">*</option>
+                    <option value="/" class="opcion">/</option>
+                    <option value="raiz" class="opcion">√</option>
+                    <option value="sen" class="opcion">sen</option>
+                    <option value="tan" class="opcion">tan</option>
+                    <option value="ln" class="opcion">ln</option>
+                    <option value="log10" class="opcion">log10</option>
+                </select>
+                
+                <p>
+                    <input type="submit" name="resultado" class="largo" value="RESULTADO" />
+                </p>
+            </form>
+        </div>
+    </body>
+</html>
